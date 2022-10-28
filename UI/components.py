@@ -14,9 +14,9 @@ def card(text_dict):
                         #<h6 style="display:inline;"> {text} </h6>""".format(title = key, text = text_dict[key][0]),
                         #unsafe_allow_html = True)
 
-        st.markdown("**{title} :**  {text}".format(title = key, text = text_dict[key][0]))
+        st.markdown("**{title} :**  {text}".format(title = key.capitalize(), text = text_dict[key][0]))
 
-def info_map(country_df, country_geo_df, key_page):
+def info_map(country_df, country_geo_df):
     """ this function uses streamlit to create a map and information card using dataframes and geodataframes"""
     # divide the layout into columns
     col1, col2 = st.columns([2, 4]) 
@@ -26,7 +26,7 @@ def info_map(country_df, country_geo_df, key_page):
 
     # add dropdown menu
     country_option = col1.selectbox("Select a Country", options = country_list, 
-                    index = 125, key = key_page + "_selectbox")
+                    index = 125)
 
     # filter the data using the result of the selectbox
     country_selected = country_df[country_df["country_alpha_name"] == country_option]
@@ -46,6 +46,6 @@ def info_map(country_df, country_geo_df, key_page):
                     legend=False)
 
     with col2:
-        map_comp = st_folium(country_map, width = 700, height=400, key = key_page + "_map")
+        map_comp = st_folium(country_map, width = 700, height=400)
 
     return country_option

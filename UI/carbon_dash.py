@@ -7,14 +7,13 @@ import plotly.express as px
 import streamlit as st
 from components import card, info_map
 
-def carbon_page(country_df, country_gdf, carbon_df):
-    # create the map and informations part
-    country_option = info_map(country_df, country_gdf, "carbon_page")
+def carbon_page(country_df, country_option, carbon_df):
     # get the UN name of country selected
     UN_name = country_df[country_df["country_alpha_name"] == country_option].iloc[0,0]
     
     # filter the carbon data using the country UN name
     df_plot = carbon_df[carbon_df["Country"] == UN_name]
+    
     # create the plolty line figures
     emission_fig = px.line(df_plot, x = "Year", y = "Emissions (thousand metric tons of carbon dioxide)",
     title = "Emissions (thousand metric tons of carbon dioxide) - " + country_option)
