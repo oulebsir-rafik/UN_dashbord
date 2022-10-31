@@ -1,5 +1,9 @@
 <img src="./img/united_nations_2.png" alt="alt text" title="image Title" style="display:inline" align="left"> <h1 style = "display:inline"> United Nations Data Dashboard </h1>
 ___
+
+<img src="./img/un_dashboard_gif.gif" alt = "gif of the dashboard" align="left">
+
+
 In this project i created a simple dashboard using **streamlit** and **streamlit-folium** to display data extracted from world bank. The objective is to analyze easily some key parameters for a selected country.
 
 You can run the dashboard locally by cloning the github repo, or you can run the dashboard by building the image using the Dockerfile and run it in docker.
