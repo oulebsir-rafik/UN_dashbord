@@ -5,6 +5,6 @@ In this project i created a simple dashboard using streamlit and streamlit foliu
 
 ## Data
 
-## Run in local
+## Run locally
 
 ## Run in docker

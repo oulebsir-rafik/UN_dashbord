@@ -1,0 +1,10 @@
+pandas==1.5.0
+numpy==1.23.3
+matplotlib==3.5.2
+folium==0.12.1
+mapclassify==2.4.3
+shapely==1.8.5.post1
+plotly==5.11.0
+geopandas==0.12.0
+streamlit==1.13.0
+streamlit-folium==0.6.15
