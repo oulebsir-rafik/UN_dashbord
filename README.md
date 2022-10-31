@@ -55,6 +55,6 @@ docker images
 You can run the docker container using this command:
 
 ```bash
-docker run -p 8501:8501 streamlit
+docker run -p 8501:8501 un_dashboard
 ```
 Bravo!, you launched the streamlit web app using **Docker**, using this image you can deploy easily this app. 
