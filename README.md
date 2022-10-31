@@ -1,4 +1,4 @@
-<img src="./img/united_nations.png" alt="alt text" title="image Title" style="display:inline" align="left"> <h1 style = "display:inline"> United Nations Data Dashboard </h1>
+<img src="./img/united_nations.png" alt="alt text" title="image Title" style="display:inline"> <h1 style = "display:inline"> United Nations Data Dashboard </h1>
 ___
 In this project i created a simple dashboard using **streamlit** and **streamlit-folium** to display data extracted from world bank. The objective is to analyze easily some key parameters for a selected country.
 
